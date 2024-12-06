@@ -3,7 +3,7 @@
 ##
 ## Build stage.
 ##
-FROM golang:1.20-alpine AS build
+FROM docker.io/library/golang:1.23-alpine AS build
 
 ## Install required libraries and tools
 RUN apk add protoc grpc protobuf build-base git
